@@ -50,7 +50,7 @@ default_gender_name = {
 }
 
 
-@blueprint.route('/full/', defaults=default_all_values, methods=["GET"])
+@blueprint.route('/full', defaults=default_all_values, methods=["GET"])
 @blueprint.route('/custom/rg', defaults=default_rg_mode, methods=["GET"])
 @blueprint.route('/custom/cpf', defaults=default_cpf_mode, methods=["GET"])
 @blueprint.route('/custom/cnpj/<cnpj_mode>', defaults=default_cnpj_mode, methods=["GET"])
