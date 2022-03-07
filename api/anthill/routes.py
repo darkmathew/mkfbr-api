@@ -34,9 +34,16 @@ default_cpf_mode = {
     'gender_name': 'R'
 }
 
-default_cnpj_mode = {
+default_cnpj_without_points_mode = {
     'cpf_mode': '', 
     'cnpj_mode': '', 
+    'gen_cnpj': True, 
+    'rg_mode': '', 
+    'gender_name': 'R'
+}
+default_cnpj_points_mode = {
+    'cpf_mode': '', 
+    'cnpj_mode': 'points', 
     'gen_cnpj': True, 
     'rg_mode': '', 
     'gender_name': 'R'
@@ -53,7 +60,8 @@ default_gender_name = {
 @blueprint.route('/full', defaults=default_all_values, methods=["GET"])
 @blueprint.route('/custom/rg', defaults=default_rg_mode, methods=["GET"])
 @blueprint.route('/custom/cpf', defaults=default_cpf_mode, methods=["GET"])
-@blueprint.route('/custom/cnpj/<cnpj_mode>', defaults=default_cnpj_mode, methods=["GET"])
+@blueprint.route('/custom/cnpj/null', defaults=default_cnpj_without_points_mode, methods=["GET"])
+@blueprint.route('/custom/cnpj/points', defaults=default_cnpj_points_mode, methods=["GET"])
 @blueprint.route('/custom/gender/<gender_name>', defaults=default_gender_name, methods=["GET"])
 @blueprint.route('/custom/all/<cpf_mode>/<cnpj_mode>/<gen_cnpj>/<rg_mode>/<gender_name>', methods=["GET"])
 @limiter.limit("60/minute")

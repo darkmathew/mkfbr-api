@@ -24,7 +24,7 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = None
     SECRET_KEY = None
     STATIC_FOLDER = 'static'
-    
+    JSON_AS_ASCII = False
 
 class ProductionConfiguration(Config):
     environ['APP_SETTINGS'] = "api.config.ProductionConfiguration"
