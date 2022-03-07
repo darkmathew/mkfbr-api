@@ -15,6 +15,7 @@ def generate_random_key():
 
 
 class Config(object):
+    MINIFY_HTML = True
     WTF_CSRF_ENABLED = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     DEBUG_TB_ENABLED = False
@@ -22,7 +23,8 @@ class Config(object):
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = None
     SECRET_KEY = None
-
+    STATIC_FOLDER = 'static'
+    
 
 class ProductionConfiguration(Config):
     environ['APP_SETTINGS'] = "api.config.ProductionConfiguration"

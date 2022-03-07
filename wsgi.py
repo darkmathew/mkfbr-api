@@ -4,6 +4,7 @@ from api.config import config_dict
 from api import create_app
 from sys import exit
 
+# Warning: Set it False to Production
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 config_mode = 'Debug' if DEBUG else 'Production'
