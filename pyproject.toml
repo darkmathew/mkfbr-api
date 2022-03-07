@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+readme = "README.md"
+description = "This project is an API based on the concept of make_a_fake_brazilian A.K.A mkfbr. The rules are the same here, stay tuned."
+authors = ["Matheus Santos <78329418+darkmathew@users.noreply.github.com>"]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
