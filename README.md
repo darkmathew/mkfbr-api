@@ -26,6 +26,7 @@ Output Example
 ```
 ## Get person with RG with punctuation
 `GET http://mkfbr-api.herokuapp.com/api/custom/rg`
+
 Output Example
 ```
 {
@@ -45,6 +46,7 @@ Output Example
 ```
 ## Get person with CPF with punctuation
 `GET http://mkfbr-api.herokuapp.com/api/custom/cpf`
+
 Output Example
 ```
 {
@@ -109,6 +111,7 @@ Output Example
 
 ## Get person with CPF, RG and CNPJ with punctuation 
 `GET http://mkfbr-api.herokuapp.com/api/full`
+
 Output Example
 ```
 {
