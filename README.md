@@ -2,7 +2,16 @@
 This API / Website was built based on the concept of [MKFBR](https://github.com/darkmathew/make_a_fake_brazilian) (Make a fake Brazilian). I recommend you take a look there, to find out more about the origin of things.
 
 # Api Usage
+
+
 **API URL:** http://mkfbr-api.herokuapp.com/api/ 
+
+
+**HTTP Method:** GET 
+
+
+**Response Format:** JSON
+
 
 ##  Simple Person Data
 `GET http://mkfbr-api.herokuapp.com/api/`
