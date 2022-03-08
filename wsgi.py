@@ -4,6 +4,7 @@ from api.config import config_dict
 from api import create_app
 from sys import exit
 
+
 # Warning: Set it False to Production
 DEBUG = config('DEBUG', default=False, cast=bool)
 
@@ -18,6 +19,6 @@ app = create_app(APP_CONFIGURATION)
 
 if __name__ == "__main__":
     if DEBUG:
-        app.run()
+        app.run(host='0.0.0.0')
     else:
-        app.run(use_reloader=False)
+        app.run(host='0.0.0.0', use_reloader=False)
