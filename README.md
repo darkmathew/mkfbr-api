@@ -1,26 +1,26 @@
 # The concept behind this project
-This API / Website was built based on the concept of [MKFBR](https://github.com/darkmathew/make_a_fake_brazilian) (Make a fake Brazilian). I recommend you take a look there, to find out more about the origin of things.
+This API / Website was built based on the concept of [MKFBR](httpss://github.com/darkmathew/make_a_fake_brazilian) (Make a fake Brazilian). I recommend you take a look there, to find out more about the origin of things.
 
 # Website Version
 
-http://mkfbr-api.herokuapp.com/site/ 
+https://mkfbr-api.herokuapp.com/site/ 
 
 
 
 # Api Usage
 
 
-**API URL:** http://mkfbr-api.herokuapp.com/api/ 
+**API URL:** https://mkfbr-api.herokuapp.com/api/ 
 
 
-**HTTP Method:** GET 
+**https Method:** GET 
 
 
 **Response Format:** JSON
 
 
 ##  Simple Person Data
-`GET http://mkfbr-api.herokuapp.com/api/`
+`GET https://mkfbr-api.herokuapp.com/api/`
 
 Output Example
 ```
@@ -40,7 +40,7 @@ Output Example
 }
 ```
 ## Get person with RG with punctuation
-`GET http://mkfbr-api.herokuapp.com/api/custom/rg`
+`GET https://mkfbr-api.herokuapp.com/api/custom/rg`
 
 Output Example
 ```
@@ -60,7 +60,7 @@ Output Example
 }
 ```
 ## Get person with CPF with punctuation
-`GET http://mkfbr-api.herokuapp.com/api/custom/cpf`
+`GET https://mkfbr-api.herokuapp.com/api/custom/cpf`
 
 Output Example
 ```
@@ -82,7 +82,7 @@ Output Example
 
 ## Get person with CNPJ with punctuation OR NOT.
 
- `GET http://mkfbr-api.herokuapp.com/api/custom/cnpj/null`  generate CNPJ without punctuation.
+ `GET https://mkfbr-api.herokuapp.com/api/custom/cnpj/null`  generate CNPJ without punctuation.
 
 Output Example
 ```
@@ -102,7 +102,7 @@ Output Example
 }
 ```
 
-`GET http://mkfbr-api.herokuapp.com/api/custom/cnpj/points`  generate CNPJ with punctuation.
+`GET https://mkfbr-api.herokuapp.com/api/custom/cnpj/points`  generate CNPJ with punctuation.
 
 Output Example
 ```
@@ -125,7 +125,7 @@ Output Example
 
 
 ## Get person with CPF, RG and CNPJ with punctuation 
-`GET http://mkfbr-api.herokuapp.com/api/full`
+`GET https://mkfbr-api.herokuapp.com/api/full`
 
 Output Example
 ```
@@ -146,7 +146,7 @@ Output Example
 ```
 
 ## Get a full customized person
-`GET http://mkfbr-api.herokuapp.com/api/custom/all/<cpf_mode>/<cnpj_mode>/<gen_cnpj>/<rg_mode>/<gender_name>`
+`GET https://mkfbr-api.herokuapp.com/api/custom/all/<cpf_mode>/<cnpj_mode>/<gen_cnpj>/<rg_mode>/<gender_name>`
 
 `cpf_mode` , `cnpj_mode`, `rg_mode`   - Set to "points" to get a punctuated value, or enter anything to generate a non-punctuated value.
 
@@ -154,7 +154,7 @@ Output Example
 
 `gender_name` - Set it to "R" for random gender, or "F" for female gender or "M" for male gender names.
 
-Final Example: `GET http://mkfbr-api.herokuapp.com/api/custom/all/points/points/true/points/F`
+Final Example: `GET https://mkfbr-api.herokuapp.com/api/custom/all/points/points/true/points/F`
 
 Output Example: 
 ```
