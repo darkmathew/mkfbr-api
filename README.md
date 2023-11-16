@@ -1,3 +1,5 @@
+#Notes: Heroku project is down. Need money :-/
+
 # The concept behind this project
 This API / Website was built based on the concept of [MKFBR](httpss://github.com/darkmathew/make_a_fake_brazilian) (Make a fake Brazilian). I recommend you take a look there, to find out more about the origin of things.
 
